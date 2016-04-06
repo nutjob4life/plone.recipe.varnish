@@ -4,7 +4,11 @@ Changelog
 2.0a5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Made three possible values for the ``varnish_version`` option.  4.0
+  (uses 4.0.3), 4.1 (uses 4.1.2), 4 (uses 4.1.2).  4 is the default.
+  4 is intended to be updated to 4.2.x when this is released and found
+  to work.
+  [maurits]
 
 
 2.0a4 (2016-02-23)
@@ -28,7 +32,7 @@ Changelog
 ------------------
 
 - Fix daemon location of script part of the recipe (/usr/bin/varnishd was
-  always used. 
+  always used.
   [fredvd]
 
 - Fix tests,  download Varnish 4.0.3 as download.
@@ -44,7 +48,7 @@ Changelog
   - use jinja2 templates for vcl
   - refactor vcl generation out in own testable class
   - change fixup cookies into a cookie whitelist
-  - split up recipe in 3 parts: build, configuration generation and script 
+  - split up recipe in 3 parts: build, configuration generation and script
     generation.
 
   [jensens]
